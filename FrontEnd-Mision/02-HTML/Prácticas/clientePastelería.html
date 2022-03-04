@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cococake - Formulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            background-color: #FFB7D4;
+            text-align: center;
+        }
+        
+        article.form {
+            float: left;
+            padding: 20px;
+            width: 40%;
+        }
+        
+        article.menu {
+            float: right;
+            padding: 20px;
+            width: 60%;
+        }
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            background-color: #29368F;
+            text-align: center;
+            color: #FFF;
+            padding: 30px;
+        }
+        
+        .btn {
+            background-color: #29368F;
+            border-radius: 8px;
+            color: #FFF;
+            width: 150px;
+            padding: 8px;
+            border-style: none;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        @media (max-width: 800px) {
+            article.form,
+            article.menu {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="assets/img/cococake.png" alt="Logo Cococake"></a>
+    </header>
+
+    <h1>Aquí se hace el pedido</h1>
+
+    <section style="margin: 20px;">
+        <article class="form">
+
+            <form action="./pedido.js">
+                <!-- Info cliente -->
+                <label for="nombre">Ingresa tu nombre</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <br><br>
+                <label for="telefono">Ingresa tu teléfono</label><br>
+                <input type="email" id="telefono" name="telefono" placeholder="Teléfono">
+                <br><br>
+                <label for="correo">Ingresa tu correo</label><br>
+                <input type="email" id="correo" name="correo" placeholder="Correo">
+                <br><br>
+
+                <!-- Descripción del Pastel-->
+                <textarea name="descripcionPastel" id="descripcionPastel" cols="30" rows="10" placeholder="Detállanos cómo quieres tu pastel"></textarea>
+                <br><br>
+
+                <h3>Sabores</h3>
+                <p>Elija el sabor para su pastel</p>
+                <br>
+                <input type="radio" id="vainilla" name="sabor" value="Vainilla">
+                <label for="vainilla">Vainilla</label>
+                <br>
+                <input type="radio" id="trufa" name="sabor" value="Trufa">
+                <label for="trufa">Trufa</label>
+                <br>
+                <input type="radio" id="montBlanc" name="sabor" value="Mont Blanc">
+                <label for="montBlanc">Mont Blanc</label>
+                <br>
+                <input type="radio" id="expresso" name="sabor" value="Expresso">
+                <label for="expresso">Expresso</label>
+                <br>
+                <input type="radio" id="snickers" name="sabor" value="Snickers">
+                <label for="snickers">Snickers</label>
+                <br>
+                <input type="radio" id="chocolate" name="sabor" value="Chocolate">
+                <label for="chocolate">Chocolate</label>
+                <br>
+                <br>
+                <h3>Adornos</h3>
+                <br>
+                <p>Elija el adorno para su pastel</p>
+                <br>
+                <input type="radio" id="fondant" name="adorno" value="Fondant">
+                <label for="fondant">Fondant</label>
+                <br>
+                <input type="radio" id="frutas" name="adorno" value="Frutas">
+                <label for="frutas">Frutas</label>
+                <br>
+                <input type="radio" id="chocolate" name="adorno" value="Chocolate">
+                <label for="chocolate">Chocolate</label>
+                <br>
+                <input type="radio" id="expresso" name="adorno" value="Chocolate blanco">
+                <label for="expresso">Chocolate blanco</label>
+                <br>
+                <input type="radio" id="merengue" name="adorno" value="Merengue">
+                <label for="merengue">Merengue</label>
+                <br>
+                <input type="radio" id="chantilly" name="adorno" value="Chantilly">
+                <label for="chantilly">Chantilly</label>
+                <br>
+                <input type="radio" id="caramelo" name="adorno" value="Caramelo">
+                <label for="caramelo">Caramelo</label>
+                <br>
+
+                <br>
+                <input class="btn" type="button" value="Enviar">
+
+            </form>
+
+
+
+        </article>
+
+        <!-- Menu -->
+        <article class="menu">
+
+            <h2>Menú</h2><br>
+
+            <h3>Sabores</h3>
+            <br>
+
+            <dl>
+                <dt>Vainilla ............................ $300</dt>
+                <dd>Esponjoso pan de vainilla, relleno de crema de vainilla y fondant tradicional.</dd>
+                <br>
+                <dt>Trufa ............................... $350</dt>
+                <dd>Delicioso pan de vainilla, relleno de espuma de chocolate belga y fondant de almendra.</dd>
+                <br>
+                <dt>Mont Blanc ...................... $300</dt>
+                <dd>Pan de chocolate, relleno de mousse de vainilla y trocitos de nuez, con fondant de chocolate blanco.</dd>
+                <br>
+                <dt>Expresso ......................... $300</dt>
+                <dd>Pan de chocolate, con un relleno de espuma de café y fondant de almendra.</dd>
+                <br>
+                <dt>Snickers .......................... $320</dt>
+                <dd>Pan de chocolate, crema de chocolate y crema de cacahuate, con trocitos de chocolate Snickers y fondant de almendra.</dd>
+                <br>
+                <dt>Chocolate ....................... $300</dt>
+                <dd>Clásico pastel estilo americano, con relleno y cubierta de betún cremoso de chocolate.</dd>
+            </dl>
+
+            <br>
+            <h3>Adornos</h3>
+            <br>
+
+            <p>Fondant .................................. $150</p>
+            <p>Frutas ..................................... $100</p>
+            <p>Chocolate ............................... $120</p>
+            <p>Chocolate blanco ................... $140</p>
+            <p>Merengue ............................... $110</p>
+            <p>Chantilly .................................. $80</p>
+            <p>Caramelo ................................ $120</p>
+
+        </article>
+    </section>
+
+    <footer>
+        &copy 2022 | Miguel Ruiz
+    </footer>
+
+</body>
+
+</html>
