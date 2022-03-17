@@ -19,6 +19,10 @@ div {
     opacity: 0.6;
 }
 
+.fondoGradiente {
+    background: linear-gradient(#0f6666, #012042);
+}
+
 .fondoImagen {
     background-image: url("../images/fondo1.jpg");
 }
