@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Clarika';
+    src: url('fonts/clarikaprogrot-rg.otf');
+}
+
+@font-face {
+    font-family: 'ClarikaBold';
+    src: url('fonts/clarikaprogrot-bd.otf');
+}
+
+@font-face {
+    font-family: 'FireSans';
+    src: url('fonts/FiraSans-Regular.ttf');
+}
+
+*,
+body {
+    font-family: 'Clarika';
+    font-weight: bold;
+}
+
+.bold a {
+    font-family: 'ClarikaBold' !important;
+}
+
+.bold {
+    font-family: 'ClarikaBold' !important;
+}
+
+p {
+    font-family: 'FireSans';
+}
